@@ -33,7 +33,6 @@ void UniElement::calculateKsiEta() {
         eta_dN(j, 2) = integral.getXpc_dN(d3dn, e);
         eta_dN(j, 3) = integral.getXpc_dN(d4dn, e);
 
-        //TODO --> kolejnosc n i e?
         //cout<<integral.getX(e)<<" "<<integral.getX(n)<<endl;
         ksiEta_N(j, 0) = integral.getXpc_N(N1, e, n);
         ksiEta_N(j, 1) = integral.getXpc_N(N2, e, n);
@@ -83,7 +82,6 @@ void UniElement::calculateH_C(Element& e, const GlobalData& gd) {
     //jacobian jako wektor bo nie wiem czy beda potrzebne osobno czy nie
     vector <Jacobian> jacobians(node, Jacobian(2, 2));
 
-//TODO --> TYLKO 2x2 - nie uniwersalnie
     //--------------------------OBLICZANIE JAKOBIANU ---------------------------
     for (int i = 0; i < node; ++i) {            //node = tyle ile jakobianow - wiersze
         for (int j = 0; j < dN; ++j) {           //4 bo jakobian 2x2 - kolumny
@@ -148,8 +146,7 @@ void UniElement::calculateHbc_P(Element& e, const GlobalData& gd){
             double detJ = sqrt(pow((e.nodes[first].x - e.nodes[second].x), 2) +
                                pow((e.nodes[first].y - e.nodes[second].y), 2)) / 2.;        // L / 2
             //cout<<"detJ: "<<detJ<<endl;
-    
-            //TODO: sprawdzic czy integral.getA(j) jest dobrze
+
             for (int j = 0; j < Npc; ++j) {
 
                 //Hbc

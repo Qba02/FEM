@@ -46,7 +46,7 @@ public:
     int element_id;
     Node nodes[node_number];
     matrix H;       //macierz 4 x 4 -> potem dodajemy do niej Hbc
-    matrix Hbc;     //macierze 4 x 4        //TODO dodac H + Hbc w UniElement
+    matrix Hbc;     //macierze 4 x 4
     matrix P;       //macierze 4 x 1
     matrix C;       //macierze 4 x 4
 
