@@ -16,3 +16,8 @@ Finite element method (FEM) software presented in this project is able to simula
 
 ### Sample result
 ![sample result for test1 scenerio](/results-images/test1-0.png)
+
+
+### License  
+This project is licensed under the **Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)** license.  
+See the [LICENSE](./LICENSE) file for details. 
