@@ -8,11 +8,11 @@ Finite element method (FEM) software presented in this project is able to simula
 ## Overview
 - **[include](./include/)** - this folder contains all header files (.h) with declarations of classes and functions
 - **[src](./src/)** - source files (implementation of those classes and functions)
-- **[input_files](./input_files/)** - input files that contains grid diagram
-- **[output_files](./output_files/)** - output files for each simulation moment
-- **[result-images](./results-images/)** - a set of sample images showing simulation results for input data
+- **[input_files](./input_files/)** - input files that contains grid diagram (Example)
+- **[output_files](./output_files/)** - output files for each simulation moment (Example)
+- **[result-images](./results-images/)** - a set of sample images showing simulation results for input data (Example)
 - **[main.cpp](./main.cpp)** - main program file
-- **[Sprawozdanie.pdf](./Sprawozdanie.pdf)** - detailed description of the software and MES method (in Polish)
+- **[Sprawozdanie.pdf](./Sprawozdanie_MES.pdf)** - detailed description of the software and MES method (in Polish)
 
 ### Sample result
 ![sample result for test1 scenerio](/results-images/test1-0.png)
